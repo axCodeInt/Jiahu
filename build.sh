@@ -1,4 +1,4 @@
-parcel build index.html --public-url ./axCodeInt/
+parcel build index.html --public-url ./
 rm -f /Users/albert/Documents/web/prod/jiahua/*.png
 rm -f /Users/albert/Documents/web/prod/jiahua/*.html
 rm -f /Users/albert/Documents/web/prod/jiahua/*.map

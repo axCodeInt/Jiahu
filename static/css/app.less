@@ -1,0 +1,259 @@
+@import './global.less';
+
+.page {
+
+	h2 {
+		font-size: 1rem;
+	}
+	h3 {
+		font-size: 1.5rem;
+	}
+	h4 {
+		font-size: 1rem;
+	}
+	h5 {}
+
+	.desc {
+		font-size: .6rem;
+	}
+
+	width: 100%;
+	margin: 0 auto;
+	// max-height: 600px;
+	overflow: hidden;
+	// height: 100%;
+	position: relative;
+
+	&:not(:last-child)::after {
+		position: absolute;
+		bottom: .5rem;
+		width: 1rem;
+		height: 2rem;
+		left: 50%;
+		margin-left: -0.5rem;
+		content: '';
+		background-image: url('../images/arrow.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	
+	.wrap {
+		display: flex;
+		height: 100%;
+		.left {
+			width: 40%;
+		}
+		.right {
+			width: 60%;
+		}
+		h2 {
+			margin-bottom: .5rem;
+		}
+		h3 {
+			.orange {
+				color: #f08830;
+			}
+		}
+		h4 {
+			letter-spacing: 0px;
+		}
+		.desc {
+			color: #666666;
+		}
+	}
+
+	&.page-1 {
+		.logo {
+			position: absolute;
+			top: 2rem;
+			left: 3rem;
+			width: 4rem;
+		}
+		.en-name {
+			opacity: 0;
+		}
+		.mastercard {
+			width: 6rem;
+			position: absolute;
+			bottom: 1rem;
+			left: 2rem;
+		}
+		.wrap {
+			.left, .right {
+			}
+
+			.left {
+				position: relative;
+				padding: 5rem 0 0 8rem;
+				.desc {
+					.tag {
+						display: inline-block;
+						position: relative;
+						vertical-align: bottom;
+						&::after {
+							position: absolute;
+							content: '';
+							display: block;
+							bottom: 0;
+							width: 100%;
+							height: 1px;
+							background-color: #f08830;
+						}
+					}
+				}
+			}
+			.right {
+			}
+		}
+	}
+	&.page-2 {
+		.wrap {
+			.left, .right {
+			}
+
+			.left {
+			}
+			.right {
+				padding: 3rem 2rem 0 3rem;
+
+			}
+		}
+	}
+	&.page-3 {
+		.wrap {
+			.left, .right {
+			}
+
+			.left {
+				padding: 3rem 0 0 1rem;
+			}
+			.right {
+			}
+		}
+	}
+	&.page-4 {
+		.wrap {
+			.left, .right {
+			}
+
+			.left {
+				padding: 3rem 1rem 0 1rem;
+			}
+			.right {
+
+			}
+		}
+	}
+}
+
+.footer {
+	background-color: #f08830;
+	color: #f5d590;
+	
+	.wrap {
+		display: flex;
+		position: relative;
+		.left {
+			padding: 1rem 2rem 0 1rem;
+			.logo {
+				width: 3rem;
+				margin: 1.5rem;
+			}
+			width: 60%;
+			position: relative;
+			
+		}
+		.right {
+			left: 40%;
+			padding-top: 2rem;
+			h5 {
+			}
+			label {
+				width: 4rem;
+				text-align: right;
+				display: inline-block;
+				margin-right: 10px;
+			}
+		}
+
+	}
+	.copyright {
+		margin: 2rem 2.5rem;
+		width: 100%;
+		padding-left: .5rem;
+	}
+}
+
+.footer {
+	font-size: 0.75rem;
+	.copyright {
+		font-size: 0.6rem;
+	}
+}
+
+@media screen and (min-width: 320px) {
+	.page {
+		&.page-1 {
+			.wrap {
+				.left {
+					padding-left: 1rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 320px) {
+	.page {
+		min-height: 40vh;
+	}
+}
+
+@media screen and (min-width: 360px) {
+	.page {
+		min-height: 40vh;
+	}
+}
+
+@media screen and (min-width: 375px) {
+	.page {
+		min-height: 45vh;
+	}
+}
+@media screen and (min-width: 600px) {
+
+	.page {
+		height: 70vh;
+		&.page-1 {
+			.wrap {
+				.left {
+					padding: 5rem 0 0 4rem;
+				}
+			}
+		}
+		h1 {
+			font-size: 3rem;
+		}
+		h2 {
+			font-size: 1.8rem;
+		}
+		h2 {
+			font-size: 1rem;
+		}
+		h3 {
+			font-size: 1.5rem;
+		}
+		h4 {
+			font-size: 1rem;
+		}
+		h5 {}
+		h1, h2, h3, h4, h5 {
+			font-weight: lighter;
+		}
+
+		.desc {
+			font-size: .9rem;
+		}
+	}
+}
+

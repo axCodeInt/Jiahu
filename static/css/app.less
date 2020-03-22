@@ -224,11 +224,36 @@
 @media screen and (min-width: 600px) {
 
 	.page {
-		height: 70vh;
-		&.page-1 {
+		height: 80vh;
+		.bg {
+			max-width: 600px;
+		}
+		&.page-1, &.page-3, &.page-4 {
 			.wrap {
 				.left {
-					padding: 5rem 0 0 4rem;
+					padding: 7rem 0 0 4rem;
+				}
+			}
+		}
+		&.page-3 {
+			.wrap {
+				.right {
+					text-align: right;
+					
+				}
+			}
+		}
+		&.page-2 {
+			.wrap {
+				.right {
+					padding: 7rem 0 0 4rem;
+				}
+			}
+		}
+		&.page-4 {
+			.wrap {
+				.left, .right {
+					width: 50%;
 				}
 			}
 		}

@@ -1,0 +1,271 @@
+@font-face {
+  font-family: 'SF Pro HK';
+  font-style: normal;
+  font-weight: 400;
+  src: url("PingFangHK-Regular.e967545d.woff2") format("woff2");
+  /* (C) 2015 Apple Inc. All rights reserved.*/
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+html {
+  overflow: auto;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 13.5px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 14.7625px;
+  }
+}
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 24px;
+  }
+}
+html {
+  font-family: SF Pro HK, Helvetica Neue, Helvetica, Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+img {
+  max-width: 100%;
+}
+h1 {
+  font-size: 1.85rem;
+}
+h2 {
+  font-size: 1.65rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1rem;
+}
+.page {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.page h2 {
+  font-size: 1rem;
+}
+.page h3 {
+  font-size: 1.5rem;
+}
+.page h4 {
+  font-size: 1rem;
+}
+.page .desc {
+  font-size: 0.6rem;
+}
+.page:not(:last-child)::after {
+  position: absolute;
+  bottom: 0.5rem;
+  width: 1rem;
+  height: 2rem;
+  left: 50%;
+  margin-left: -0.5rem;
+  content: '';
+  background-image: url('arrow.f5f50523.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.page .wrap {
+  display: flex;
+  height: 100%;
+}
+.page .wrap .left {
+  width: 40%;
+}
+.page .wrap .right {
+  width: 60%;
+}
+.page .wrap h2 {
+  margin-bottom: 0.5rem;
+}
+.page .wrap h3 .orange {
+  color: #f08830;
+}
+.page .wrap h4 {
+  letter-spacing: 0px;
+}
+.page .wrap .desc {
+  color: #666666;
+}
+.page.page-1 .logo {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  width: 4rem;
+}
+.page.page-1 .en-name {
+  opacity: 0;
+}
+.page.page-1 .mastercard {
+  width: 6rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+}
+.page.page-1 .wrap .left,
+.page.page-1 .wrap .right {
+  width: 50%;
+}
+.page.page-1 .wrap .left {
+  position: relative;
+  padding: 5rem 0 0 8rem;
+}
+.page.page-1 .wrap .left .desc .tag {
+  display: inline-block;
+  position: relative;
+  vertical-align: bottom;
+}
+.page.page-1 .wrap .left .desc .tag::after {
+  position: absolute;
+  content: '';
+  display: block;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #f08830;
+}
+.page.page-2 .wrap .right {
+  padding: 3rem 2rem 0 3rem;
+}
+.page.page-3 .wrap .left {
+  padding: 3rem 0 0 1rem;
+}
+.page.page-4 .wrap .left {
+  padding: 3rem 1rem 0 1rem;
+}
+.footer {
+  background-color: #f08830;
+  color: #f5d590;
+}
+.footer .wrap {
+  display: flex;
+  position: relative;
+}
+.footer .wrap .left {
+  padding: 1rem 2rem 0 1rem;
+  width: 60%;
+  position: relative;
+}
+.footer .wrap .left .logo {
+  width: 3rem;
+  margin: 1.5rem;
+}
+.footer .wrap .right {
+  left: 40%;
+  padding-top: 2rem;
+}
+.footer .wrap .right label {
+  width: 4rem;
+  text-align: right;
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer .copyright {
+  margin: 2rem 2.5rem;
+  width: 100%;
+  padding-left: 0.5rem;
+}
+.footer {
+  font-size: 0.75rem;
+}
+.footer .copyright {
+  font-size: 0.6rem;
+}
+@media screen and (min-width: 320px) {
+  .page.page-1 .wrap .left {
+    padding-left: 1rem;
+  }
+}
+@media screen and (min-width: 320px) {
+  .page {
+    min-height: 40vh;
+  }
+}
+@media screen and (min-width: 360px) {
+  .page {
+    min-height: 40vh;
+  }
+}
+@media screen and (min-width: 375px) {
+  .page {
+    min-height: 45vh;
+  }
+}
+@media screen and (min-width: 600px) {
+  .page {
+    height: 80vh;
+  }
+  .page .bg {
+    max-width: 600px;
+  }
+  .page.page-1 .wrap .left,
+  .page.page-3 .wrap .left,
+  .page.page-4 .wrap .left {
+    padding: 7rem 0 0 4rem;
+  }
+  .page.page-3 .wrap .right {
+    text-align: right;
+  }
+  .page.page-2 .wrap .right {
+    padding: 7rem 0 0 4rem;
+  }
+  .page.page-4 .wrap .left,
+  .page.page-4 .wrap .right {
+    width: 50%;
+  }
+  .page h1 {
+    font-size: 3rem;
+  }
+  .page h2 {
+    font-size: 1.8rem;
+  }
+  .page h2 {
+    font-size: 1rem;
+  }
+  .page h3 {
+    font-size: 1.5rem;
+  }
+  .page h4 {
+    font-size: 1rem;
+  }
+  .page h1,
+  .page h2,
+  .page h3,
+  .page h4,
+  .page h5 {
+    font-weight: lighter;
+  }
+  .page .desc {
+    font-size: 0.9rem;
+  }
+}
+
+
+/*# sourceMappingURL=/app.9158b59a.css.map */
